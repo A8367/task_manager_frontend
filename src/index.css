@@ -1,0 +1,10 @@
+*{
+  border: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html{
+  scrollbar-width: none;
+  scrollbar-color: #FF6767 white;
+}
