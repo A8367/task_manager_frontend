@@ -16,8 +16,8 @@ function MyTask() {
         const response = await fetch(`${import.meta.env.API_URL}/alltodos`);
         const data = await response.json();
         setTodos(data);
-      } catch (error) {
-        console.error("Error fetching todos:", error);
+      } catch (e) {
+        console.error("Error fetching todos:", e);
         setError("Error while fetching todos");
       }
     };

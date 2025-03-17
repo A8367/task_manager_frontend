@@ -18,8 +18,8 @@ function CompletedTasks() {
         // Filter tasks where the status is 'Complete'
         const completed = data.filter(todo => todo.status === 'Complete');
         setCompletedTodos(completed);
-      } catch (error) {
-        console.error("Error fetching todos:", error);
+      } catch (e) {
+        console.error("Error fetching todos:", e);
         setError("Error while fetching completed tasks");
       }
     };

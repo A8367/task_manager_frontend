@@ -15,8 +15,8 @@ const CompletedTodoList = ({refresh,setRefresh}) => {
         // Filter todos to get only the ones with status 'Complete'
         const filteredTodos = data.filter(todo => todo.status === 'Complete');
         setCompletedTodos(filteredTodos);
-      } catch (error) {
-        console.error('Error fetching todos:', error);
+      } catch (e) {
+        console.error('Error fetching todos:', e);
         setError("Error fetching Completed Tasks")
       }
     };

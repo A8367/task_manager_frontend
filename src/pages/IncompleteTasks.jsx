@@ -18,8 +18,8 @@ function IncompleteTasks() {
         // Filter tasks where the status is 'Incomplete'
         const completed = data.filter(todo => todo.status === 'Incomplete');
         setCompletedTodos(completed);
-      } catch (error) {
-        console.error("Error fetching todos:", error);
+      } catch (e) {
+        console.error("Error fetching todos:", e);
         setError("Error while fetching completed tasks");
       }
     };
