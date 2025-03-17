@@ -126,24 +126,24 @@ const handleSubmit = async (e) => {
                     <label className={styles.priorityOption}>
                         <input
                             type="checkbox"
-                            name="extreme"
-                            checked={task.priority.extreme}
+                            name="Extreme"
+                            checked={task.priority.Extreme}
                             onChange={handleCheckboxChange}
                         /> Extreme
                     </label>
                     <label className={styles.priorityOption}>
                         <input
                             type="checkbox"
-                            name="moderate"
-                            checked={task.priority.moderate}
+                            name="Moderate"
+                            checked={task.priority.Moderate}
                             onChange={handleCheckboxChange}
                         /> Moderate
                     </label>
                     <label className={styles.priorityOption}>
                         <input
                             type="checkbox"
-                            name="low"
-                            checked={task.priority.low}
+                            name="Low"
+                            checked={task.priority.Low}
                             onChange={handleCheckboxChange}
                         /> Low
                     </label>
