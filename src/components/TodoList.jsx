@@ -9,7 +9,7 @@ const TodoList = ({ refresh, setRefresh }) => {
     useEffect(() => {
         const fetchTodos = async () => {
             try {
-                const res = await fetch(`${import.meta.env.API_URL}/alltodos`);
+                const res = await fetch(`${import.meta.env.VITE_API_URL}/alltodos`);
                 if (res.ok) {
                     const data = await res.json();
                     setTodos(data);

@@ -13,7 +13,7 @@ function MyTask() {
   useEffect(() => {
     const fetchTodos = async () => {
       try {
-        const response = await fetch(`${import.meta.env.API_URL}/alltodos`);
+        const response = await fetch(`${import.meta.env.VITE_API_URL}/alltodos`);
         const data = await response.json();
         setTodos(data);
       } catch (e) {

@@ -52,7 +52,7 @@ const EditTaskForm = ({ setEditDisplayForm, setRefresh, existTask }) => {
     console.log('Task submitted:', task);
 
     try {
-      const res = await fetch(`${import.meta.env.API_URL}/todos/${task.id}`, {
+      const res = await fetch(`${import.meta.env.VITE_API_URL}/todos/${task.id}`, {
         method: 'PATCH', // Use PATCH for updating existing tasks
         headers: {
           'Content-Type': 'application/json',

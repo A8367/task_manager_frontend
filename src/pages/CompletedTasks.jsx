@@ -12,7 +12,7 @@ function CompletedTasks() {
   useEffect(() => {
     const fetchCompletedTodos = async () => {
       try {
-        const response = await fetch(`${import.meta.env.API_URL}/alltodos`);
+        const response = await fetch(`${import.meta.env.VITE_API_URL}/alltodos`);
         const data = await response.json();
         
         // Filter tasks where the status is 'Complete'

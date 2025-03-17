@@ -9,7 +9,7 @@ const CompletedTodoList = ({refresh,setRefresh}) => {
   useEffect(() => {
     const fetchCompletedTodos = async () => {
       try {
-        const response = await fetch(`${import.meta.env.API_URL}/alltodos`);
+        const response = await fetch(`${import.meta.env.VITE_API_URL}/alltodos`);
         const data = await response.json();
         
         // Filter todos to get only the ones with status 'Complete'

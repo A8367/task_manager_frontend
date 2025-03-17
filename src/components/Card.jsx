@@ -20,7 +20,7 @@ function Card({ title, desc, priority, date, status,id,setRefresh }) {
   // Handle task completion
   const completeTask = async () => {
     try {
-      const res = await fetch(`${import.meta.env.API_URL}/todo_complete/${id}`, {
+      const res = await fetch(`${import.meta.env.VITE_API_URL}/todo_complete/${id}`, {
         method: 'PATCH',
         headers: {
           'Content-Type': 'application/json',
@@ -49,7 +49,7 @@ function Card({ title, desc, priority, date, status,id,setRefresh }) {
   // Handle task deletion
   const deleteTask = async () => {
     try {
-      const res = await fetch(`${import.meta.env.API_URL}/todos/${id}`, {
+      const res = await fetch(`${import.meta.env.VITE_API_URL}/todos/${id}`, {
         method: 'DELETE',
       });
       if (res.ok) {

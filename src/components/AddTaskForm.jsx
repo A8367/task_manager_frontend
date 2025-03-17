@@ -54,7 +54,7 @@ const handleSubmit = async (e) => {
     console.log('Task submitted:', task);
 
     try {
-        const res = await fetch(`${import.meta.env.API_URL}/todos`, {
+        const res = await fetch(`${import.meta.env.VITE_API_URL}/todos`, {
             method: "POST",
             body: JSON.stringify(task),
             headers: {
